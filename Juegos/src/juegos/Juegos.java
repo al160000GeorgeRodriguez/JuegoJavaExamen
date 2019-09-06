@@ -9,12 +9,12 @@ package juegos;
  *
  * @author WAX
  */
-public class juegos extends javax.swing.JFrame {
+public class Juegos extends javax.swing.JFrame {
 
     /**
      * Creates new form juegos
      */
-    public juegos() {
+    public Juegos() {
         initComponents();
         inicial();
     }
@@ -104,10 +104,15 @@ public class juegos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RNumeroActionPerformed
-        // TODO add your handling code here:
+        Ahorcado ah=new Ahorcado();
+        ah.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_RNumeroActionPerformed
 
     private void RAhorcadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RAhorcadoActionPerformed
+        Numero num=new Numero();
+        num.setVisible(true);
+        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_RAhorcadoActionPerformed
 
@@ -132,20 +137,21 @@ public class juegos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Juegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new juegos().setVisible(true);
+                new Juegos().setVisible(true);
             }
         });
     }
