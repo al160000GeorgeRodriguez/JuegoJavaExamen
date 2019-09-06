@@ -16,8 +16,13 @@ public class juegos extends javax.swing.JFrame {
      */
     public juegos() {
         initComponents();
+        inicial();
     }
-
+    public void inicial(){
+        GMenu.add(RAhorcado);
+        GMenu.add(RNumero);
+        GMenu.add(RSalir);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,39 +32,40 @@ public class juegos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jRadioButton1 = new javax.swing.JRadioButton();
+        GMenu = new javax.swing.ButtonGroup();
+        RNumero = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
+        RAhorcado = new javax.swing.JRadioButton();
+        RSalir = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Juegos");
         setResizable(false);
 
-        jRadioButton1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jRadioButton1.setText("Adivina el número");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        RNumero.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RNumero.setText("Adivina el número");
+        RNumero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                RNumeroActionPerformed(evt);
             }
         });
 
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jLabel1.setText("Elija el juego:");
 
-        jRadioButton2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jRadioButton2.setText("Ahorcado");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        RAhorcado.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RAhorcado.setText("Ahorcado");
+        RAhorcado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                RAhorcadoActionPerformed(evt);
             }
         });
 
-        jRadioButton5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jRadioButton5.setText("Salir");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+        RSalir.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RSalir.setText("Salir");
+        RSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
+                RSalirActionPerformed(evt);
             }
         });
 
@@ -75,9 +81,9 @@ public class juegos extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton5))))
+                            .addComponent(RAhorcado)
+                            .addComponent(RNumero)
+                            .addComponent(RSalir))))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -86,28 +92,28 @@ public class juegos extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
                 .addGap(37, 37, 37)
-                .addComponent(jRadioButton1)
+                .addComponent(RNumero)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton2)
+                .addComponent(RAhorcado)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton5)
+                .addComponent(RSalir)
                 .addContainerGap(64, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void RNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RNumeroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_RNumeroActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void RAhorcadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RAhorcadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_RAhorcadoActionPerformed
 
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+    private void RSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSalirActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
+    }//GEN-LAST:event_RSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -145,9 +151,10 @@ public class juegos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup GMenu;
+    private javax.swing.JRadioButton RAhorcado;
+    private javax.swing.JRadioButton RNumero;
+    private javax.swing.JRadioButton RSalir;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton5;
     // End of variables declaration//GEN-END:variables
 }
