@@ -104,14 +104,14 @@ public class Juegos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RNumeroActionPerformed
-        Ahorcado ah=new Ahorcado();
-        ah.setVisible(true);
+        Numero num=new Numero();
+        num.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_RNumeroActionPerformed
 
     private void RAhorcadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RAhorcadoActionPerformed
-        Numero num=new Numero();
-        num.setVisible(true);
+        Ahorcado aho=new Ahorcado();
+        aho.setVisible(true);
         this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_RAhorcadoActionPerformed
